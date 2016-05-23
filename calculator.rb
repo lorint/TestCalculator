@@ -18,6 +18,7 @@ class Calculator
 	end
 
 	def divide(val)
+		return nil if val == 0
 		self.accumulator /= val
 	end
 end
