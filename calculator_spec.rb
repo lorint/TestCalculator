@@ -7,5 +7,7 @@ class CalculatorSpec < MiniTest::Test
 		my_calculator.accumulator = 5
 		assert_equal(my_calculator.accumulator, 5)
 	end
+
+	
 end
 
