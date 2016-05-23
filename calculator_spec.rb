@@ -43,7 +43,13 @@ class CalculatorSpec < MiniTest::Test
     my_calculator = Calculator.new
     my_calculator.accumulator = 5
     assert_equal(2.5, my_calculator.divide(2))
-    assert_equal(-4, my_calculator.divide(-0.25))
+    assert_equal(-10, my_calculator.divide(-0.25))
+  end
+
+  def test_divide_by_zero
+    my_calculator = Calculator.new
+    my_calculator.accumulator = 5
+    assert_nil(my_calculator.divide(0))
   end
 end
 
